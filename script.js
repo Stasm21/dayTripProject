@@ -1,10 +1,10 @@
 
 let tripInfo = [];
 
-function pickDestination() {
+function destination() {
 
     let places = ['Rome, Italy', 'Santorini, Greece', 'London, England', 'Paris, France', 'Lisbon, Portugal'];
-    let userInput = prompt(`For random destination, pick a number 0 to ${places.length}`)
+    let userInput = prompt(`For destination, pick a number 0 to ${places.length}`)
 
     for (let i = 0; i < places.length; i++) {
         if (userInput == i) {
@@ -14,6 +14,34 @@ function pickDestination() {
     }
     // prompt(`For random destination, pick a number 0 to ${places.length}`)
 }
+
+function restaurant() {
+    let food = ['Steakhouse', 'Foodtruck', 'Vegan House', 'Old Country kitchen', 'Seafood'];
+    let userInput = prompt(`For a place to eat, pick a number 0 to ${food.length}`)
+
+    for (let i = 0; i < food.length; i++) {
+        if (userInput == i) {
+            tripInfo.push(food[i])
+            console.log(food[i])
+        }
+    }
+
+}
+
+
+function restaurant() {
+    let food = ['Steakhouse', 'Foodtruck', 'Vegan House', 'Old Country kitchen', 'Seafood'];
+    let userInput = prompt(`For a place to eat, pick a number 0 to ${food.length}`)
+
+    for (let i = 0; i < food.length; i++) {
+        if (userInput == i) {
+            tripInfo.push(food[i])
+            console.log(food[i])
+        }
+    }
+
+}
+
 
 // function doStuff(){
 //     let colors = ["red", "blue", "green"]
@@ -32,4 +60,5 @@ function pickDestination() {
 
 // doStuff();
 
-pickDestination();
+destination();
+restaurant();
